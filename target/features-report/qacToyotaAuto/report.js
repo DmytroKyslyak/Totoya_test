@@ -22,7 +22,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:21)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:24)"
 });
 formatter.result({
   "status": "passed"
@@ -48,7 +48,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:28)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:31)"
 });
 formatter.result({
   "status": "passed"
@@ -58,7 +58,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:32)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:36)"
 });
 formatter.result({
   "status": "passed"
@@ -68,7 +68,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:37)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:40)"
 });
 formatter.result({
   "status": "passed"
@@ -78,7 +78,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:41)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:44)"
 });
 formatter.result({
   "status": "passed"
@@ -88,7 +88,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:50)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:53)"
 });
 formatter.result({
   "status": "passed"
@@ -98,7 +98,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:54)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:57)"
 });
 formatter.result({
   "status": "passed"
@@ -108,7 +108,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:58)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:61)"
 });
 formatter.result({
   "status": "passed"

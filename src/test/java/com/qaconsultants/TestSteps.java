@@ -17,6 +17,9 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
  * for testCucumerWeb project.
  */
 public class TestSteps implements En {
+    PageObject1 pageObject1;
+
+
     public TestSteps() {
         Given("^I open login page$", () -> {
             Configuration.browserBinary = "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe";
@@ -28,11 +31,11 @@ public class TestSteps implements En {
         When("^I open browser$", () -> {
             open("http://admin:admin@localhost:8090");
             sleep(3000);
+            pageObject1=page(PageObject1.class);
         });
         And("^I press button$", () -> {
            //$(By.xpath("//button[@class=\"mat-paginator-navigation-last mat-icon-button mat-button-base ng-star-inserted\"]")).click();
-            $(By.xpath("//button[@aria-label=\"Last page\"]")).click();
-           sleep(3000);
+            pageObject1.clickButtom();
         });
         And("^I check element$", () -> {
             $(By.xpath("//tr[last()]/td/a")).click();
