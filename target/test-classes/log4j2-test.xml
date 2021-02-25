@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <!-- Properties section -->
+    <Properties>
+        <property name="log_level_console">DEBUG</property>
+        <property name="log_level_file">DEBUG</property>
+        <property name="log_level_spring">DEBUG</property>
+        <property name="log_level_hibernate">DEBUG</property>
+        <property name="log_level_httpclient">DEBUG</property>
+        <Property name="baseDir">C:/WORK/logs/</Property>
+        <Property name="archDir">${baseDir}arch</Property>
+        <Property name="core_log">core_${sys:user.name:-batch}</Property>
+        <Property name="spring_log">spring_${sys:user.name:-batch}.log</Property>
+    </Properties>
+
+    <!-- Appenders section -->
+    <Appenders>
+        <!-- console appender -->
+        <Console name="console_file" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="[%highlight{%5p}][%tid] %d{HH:mm:ss} %msg%n"/>
+        </Console>
+
+        <Routing name="Routing">
+            <Routes pattern="$${ctx:threadId:-0000}">
+                <Route>
+                    <RollingFile name="core_file_${ctx:threadId:-0000}"
+                                 fileName="${baseDir}/${core_log}_${ctx:threadId:-0000}.log"
+                                 filePattern="${archDir}/arch_core_log-%d{yyyy-MM-dd_HH}-${ctx:threadId:-0000}-%i.log.gz">
+                        <PatternLayout>
+                            <Pattern>%level{length=1} %d{COMPACT} %m %ex%n</Pattern>
+                        </PatternLayout>
+                        <Policies>
+                            <SizeBasedTriggeringPolicy size="100000000"/>
+                        </Policies>
+                        <DefaultRolloverStrategy>
+                            <Delete basePath="${archDir}" maxDepth="2">
+                                <IfAll>
+                                    <IfFileName glob="arch_core*.log.gz"/>
+                                    <IfLastModified age="7d"/>
+                                </IfAll>
+                            </Delete>
+                        </DefaultRolloverStrategy>
+                    </RollingFile>
+                </Route>
+            </Routes>
+        </Routing>
+        <!-- File appender of spring hibernate log -->
+        <RollingFile name="spring_file" fileName="${baseDir}/${spring_log}"
+                     filePattern="${archDir}/arch_spring_log-%d{yyyy-MM-dd_HH}-%i.log.gz">
+            <PatternLayout>
+                <Pattern>%level{length=1} %d{COMPACT} [%t] %c{1.} %C{1} %m %ex%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="5000000"/>
+            </Policies>
+            <DefaultRolloverStrategy>
+                <Delete basePath="${archDir}" maxDepth="2">
+                    <IfAll>
+                        <IfFileName glob="arch_spring*.log.gz"/>
+                        <IfLastModified age="1d"/>
+                    </IfAll>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+    </Appenders>
+
+    <!-- Loggers section -->
+    <Loggers>
+        <!-- core logger -->
+        <Logger name="com.com.qaconsultants.core" level="${log_level_file}" additivity="true">
+            <AppenderRef ref="Routing" level="${log_level_file}"/>
+        </Logger>
+        <Logger name="org.springframework" level="${log_level_spring}" additivity="true">
+            <AppenderRef ref="spring_file" level="${log_level_spring}"/>
+        </Logger>
+        <Logger name="org.apache.commons" level="ERROR" additivity="true">
+            <AppenderRef ref="spring_file" level="${log_level_file}"/>
+        </Logger>
+        <Logger name="org.hibernate" level="${log_level_hibernate}" additivity="true">
+            <AppenderRef ref="spring_file" level="${log_level_hibernate}"/>
+        </Logger>
+        <Logger name="org.jboss" level="ERROR" additivity="true">
+            <AppenderRef ref="spring_file" level="${log_level_file}"/>
+        </Logger>
+        <Logger name="org.apache.http" level="${log_level_httpclient}">
+            <AppenderRef ref="console_file"/>
+        </Logger>
+
+        <!-- Root logger -->
+        <Root level="${log_level_console}">
+            <AppenderRef ref="console_file" level="${log_level_console}"/>
+        </Root>
+    </Loggers>
+</Configuration>
