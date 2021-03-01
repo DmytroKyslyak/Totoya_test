@@ -22,7 +22,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:24)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:19)"
 });
 formatter.result({
   "status": "passed"
@@ -48,7 +48,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:31)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:26)"
 });
 formatter.result({
   "status": "passed"
@@ -58,7 +58,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:36)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:31)"
 });
 formatter.result({
   "status": "passed"
@@ -68,7 +68,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:40)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:35)"
 });
 formatter.result({
   "status": "passed"
@@ -78,7 +78,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:44)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:40)"
 });
 formatter.result({
   "status": "passed"
@@ -88,7 +88,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:53)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:50)"
 });
 formatter.result({
   "status": "passed"
@@ -98,7 +98,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:57)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:56)"
 });
 formatter.result({
   "status": "passed"
