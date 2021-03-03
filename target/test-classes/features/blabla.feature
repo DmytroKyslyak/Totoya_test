@@ -57,10 +57,8 @@ Feature: Login feature
   @testToyota1
   Scenario: Web Test
     When I open browser
-    And I press button
-    And I check element
-    And I click button
-    Then I check element block
-    And I click button last page
+    And I press button last page
+    And I click button Payment
+    Then I edit Payment Info
+    And I click button Update
     And I check last row
-

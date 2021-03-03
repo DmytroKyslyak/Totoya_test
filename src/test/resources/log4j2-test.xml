@@ -2,7 +2,7 @@
 <Configuration>
     <!-- Properties section -->
     <Properties>
-        <property name="log_level_console">DEBUG</property>
+        <property name="log_level_console">WARN</property>
         <property name="log_level_file">DEBUG</property>
         <property name="log_level_spring">DEBUG</property>
         <property name="log_level_hibernate">DEBUG</property>

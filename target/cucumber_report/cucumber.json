@@ -11,20 +11,31 @@
         "steps": [
           {
             "result": {
-              "duration": 461848300,
+              "duration": 4986000,
               "status": "passed"
             },
             "line": 12,
             "name": "I open login page",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:19)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:20)"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-01T21:17:59.226Z",
+        "start_timestamp": "2021-03-03T19:02:58.430Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1876471800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:27)"
+            }
+          }
+        ],
         "line": 58,
         "name": "Web Test",
         "description": "",
@@ -34,85 +45,73 @@
         "steps": [
           {
             "result": {
-              "duration": 2663003300,
+              "duration": 2560284600,
               "status": "passed"
             },
             "line": 59,
             "name": "I open browser",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:26)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:29)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 146932300,
+              "duration": 230272600,
               "status": "passed"
             },
             "line": 60,
-            "name": "I press button",
+            "name": "I press button last page",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:31)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:33)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 353313900,
+              "duration": 352281500,
               "status": "passed"
             },
             "line": 61,
-            "name": "I check element",
+            "name": "I click button Payment",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:35)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:37)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 364354700,
+              "duration": 579706900,
               "status": "passed"
             },
             "line": 62,
-            "name": "I click button",
+            "name": "I edit Payment Info",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:40)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 205264700,
-              "status": "passed"
-            },
-            "line": 63,
-            "name": "I check element block",
-            "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:50)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:41)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 109695500,
+              "duration": 103941300,
               "status": "passed"
             },
-            "line": 64,
-            "name": "I click button last page",
+            "line": 63,
+            "name": "I click button Update",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:56)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:46)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 77180500,
+              "duration": 3089511400,
               "status": "passed"
             },
-            "line": 65,
+            "line": 64,
             "name": "I check last row",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:61)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:49)"
             },
             "keyword": "And "
           }

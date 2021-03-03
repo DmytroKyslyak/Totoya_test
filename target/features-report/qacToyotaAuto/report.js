@@ -17,12 +17,15 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "I open login page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:19)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:20)"
 });
 formatter.result({
   "status": "passed"
@@ -48,57 +51,47 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:26)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:29)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I press button",
+  "name": "I press button last page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:31)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:33)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I check element",
+  "name": "I click button Payment",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:35)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:37)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:40)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I check element block",
+  "name": "I edit Payment Info",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:50)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:41)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click button last page",
+  "name": "I click button Update",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:56)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:46)"
 });
 formatter.result({
   "status": "passed"
@@ -108,7 +101,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:61)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:49)"
 });
 formatter.result({
   "status": "passed"
