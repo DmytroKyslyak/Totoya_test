@@ -17,9 +17,9 @@ import java.util.concurrent.TimeUnit;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.sleep;
 
-@Component("Payments")
+@Component("pageObjectPayments")
 
-public class Payments {
+public class PageObjectPayments {
 
     @FindBy(xpath = "//button[@aria-label=\"Last page\"]")
     private SelenideElement buttonLastPage;

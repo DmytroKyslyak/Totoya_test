@@ -1,5 +1,6 @@
 package com.qaconsultants;
 
+import lombok.ToString;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
@@ -8,6 +9,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "CUSTOMERS")
 @Component
+@ToString
 public class Customer {
 
     @Id

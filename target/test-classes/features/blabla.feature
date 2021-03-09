@@ -62,3 +62,9 @@ Feature: Login feature
     Then I edit Payment Info
     And I click button Update
     And I check last row
+
+  @dataBaseToyota
+  Scenario: BD
+    When I receive all customers
+    And I receive info about all payments
+    And I receive customer name with sum "800"

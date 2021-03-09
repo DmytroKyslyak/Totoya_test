@@ -25,13 +25,13 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:20)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:19)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Web Test",
+  "name": "BD",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -42,22 +42,22 @@ formatter.scenario({
       "name": "@tagLoginFeat"
     },
     {
-      "name": "@testToyota1"
+      "name": "@dataBaseToyota"
     }
   ]
 });
 formatter.step({
-  "name": "I open browser",
+  "name": "I receive all customers",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:29)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:28)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I press button last page",
+  "name": "I receive info about all payments",
   "keyword": "And "
 });
 formatter.match({
@@ -67,41 +67,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click button Payment",
+  "name": "I receive customer name with sum \"800\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:37)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I edit Payment Info",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:41)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I click button Update",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:46)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I check last row",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:49)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:36)"
 });
 formatter.result({
   "status": "passed"

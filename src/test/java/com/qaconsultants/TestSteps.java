@@ -2,8 +2,6 @@ package com.qaconsultants;
 
 import com.codeborne.selenide.Configuration;
 import io.cucumber.java8.En;
-import org.openqa.selenium.By;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -13,8 +11,9 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
  * for testCucumerWeb project.
  */
 public class TestSteps implements En {
-    Payments pageObject1;
-    PaymentInfo pageObject2;
+    PageObjectBD pageObject1;
+    PageObjectBD pageObject2;
+    PageObjectBD pageObject3;
 
     public TestSteps() {
         Given("^I open login page$", () -> {
@@ -26,29 +25,16 @@ public class TestSteps implements En {
 
         Before(SpringSelenide::getInstance);
 
-        When("^I open browser$", () -> {
-            open("http://admin:admin@localhost:8090");
-            pageObject1 = SpringSelenide.page(Payments.class);
-        });
-        And("^I press button last page$", () -> {
-            pageObject1.clickButtonLast();
+        When("^I receive all customers$", () -> {
+            pageObject2 = SpringSelenide.getInstance().addBean(PageObjectBD.class);
+            pageObject2.getCustomers();
         });
 
-        And("^I click button Payment$", () -> {
-            pageObject1.clickButtonPayment();
-            pageObject2 = SpringSelenide.page(PaymentInfo.class);
+        And("^I receive info about all payments$", () -> {
+            pageObject2.getPayments();
         });
-        Then("^I edit Payment Info$", () -> {
-            pageObject2.setPaymentAmount();
-            pageObject2.clickButtonOpenCalendar();
-            pageObject2.clickButtonSelectData();
-        });
-        And("^I click button Update$", () -> {
-            pageObject2.clickButtonUpdate();
-        });
-        And("^I check last row$", () -> {
-            pageObject1.clickButtonLast();
-            sleep(3000);
+        And("^I receive customer name with sum \"([^\"]*)\"$", (String sum) -> {
+            pageObject2.getTotalAmount(sum);
         });
     }
 }
