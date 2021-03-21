@@ -1,4 +1,4 @@
-package com.qaconsultants;
+package com.qaconsultants.db;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

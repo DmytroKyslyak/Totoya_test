@@ -53,18 +53,37 @@ Feature: Login feature
     And I press Save button
     Then I see that user is created
 
+  @testCombobox
+  Scenario: File-03-Task01
+    When I open browser as "admin"
+    And I set combobox "10"
+    And I corresponding number
 
-  @testToyota1
-  Scenario: Web Test
-    When I open browser
+  @testEditLastPayment
+  Scenario: File-03-Task05
+    When I open browser as "admin"
     And I press button last page
     And I click button Payment
     Then I edit Payment Info
     And I click button Update
-    And I check last row
+    And I click button last page
+    And I verify record
 
-  @dataBaseToyota
-  Scenario: BD
+  @testCreateNewPayment
+  Scenario: File-03-Task02-03
+    When I open browser as "admin"
+    And I create new payment
+    And I click button last page
+    And I verify record
+    And I verify record with DB
+
+  @testDB
+  Scenario: DB
     When I receive all customers
     And I receive info about all payments
     And I receive customer name with sum "800"
+    And I receive last row payment
+
+  @testRest
+  Scenario: Task-07
+    When I receive all customers api

@@ -1,4 +1,4 @@
-package com.qaconsultants;
+package com.qaconsultants.db;
 
 import lombok.ToString;
 import org.springframework.stereotype.Component;

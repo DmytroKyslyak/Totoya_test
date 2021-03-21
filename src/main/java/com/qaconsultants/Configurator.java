@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
-@ComponentScan(basePackages = {"com.qaconsultants"})
+@ComponentScan(basePackages = {"com.qaconsultants.db", "com.qaconsultants.rest", "com.qaconsultants.web"})
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = {"com.qaconsultants"})
 public class Configurator {

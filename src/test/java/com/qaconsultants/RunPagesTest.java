@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 }
         , features = {"src/test/resources/features"}
         , glue = {"com/qaconsultants"}
-        , tags = {"@dataBaseToyota"}
+        , tags = {"@testCreateNewPayment"}
 )
 @RunWith(Cucumber.class)
 public class RunPagesTest   {}

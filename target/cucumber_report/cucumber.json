@@ -11,77 +11,101 @@
         "steps": [
           {
             "result": {
-              "duration": 12965900,
+              "duration": 15000000,
               "status": "passed"
             },
             "line": 12,
             "name": "I open login page",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:19)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:25)"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2021-03-09T19:46:11.809Z",
+        "start_timestamp": "2021-03-19T16:40:48.138Z",
         "before": [
           {
             "result": {
-              "duration": 2745462000,
+              "duration": 3429000000,
               "status": "passed"
             },
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:26)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:32)"
             }
           }
         ],
-        "line": 67,
-        "name": "BD",
+        "line": 73,
+        "name": "File-03-Task02-03",
         "description": "",
-        "id": "login-feature;bd",
+        "id": "login-feature;file-03-task02-03",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 222946500,
+              "duration": 9646000000,
               "status": "passed"
             },
-            "line": 68,
-            "name": "I receive all customers",
+            "line": 74,
+            "name": "I open browser as \"admin\"",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:28)"
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 19
+                }
+              ],
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:35)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 161568100,
+              "duration": 15756000000,
               "status": "passed"
             },
-            "line": 69,
-            "name": "I receive info about all payments",
+            "line": 75,
+            "name": "I create new payment",
             "match": {
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:33)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:51)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 63828700,
+              "duration": 3128000000,
               "status": "passed"
             },
-            "line": 70,
-            "name": "I receive customer name with sum \"800\"",
+            "line": 76,
+            "name": "I click button last page",
             "match": {
-              "arguments": [
-                {
-                  "val": "800",
-                  "offset": 34
-                }
-              ],
-              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:36)"
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:93)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I verify record",
+            "match": {
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:61)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 98000000,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "I verify record with DB",
+            "match": {
+              "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:64)"
             },
             "keyword": "And "
           }
@@ -94,7 +118,7 @@
             "name": "@tagLoginFeat"
           },
           {
-            "name": "@dataBaseToyota"
+            "name": "@testCreateNewPayment"
           }
         ]
       }

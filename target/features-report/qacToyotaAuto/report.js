@@ -25,13 +25,13 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:19)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:25)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "BD",
+  "name": "File-03-Task02-03",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -42,36 +42,56 @@ formatter.scenario({
       "name": "@tagLoginFeat"
     },
     {
-      "name": "@dataBaseToyota"
+      "name": "@testCreateNewPayment"
     }
   ]
 });
 formatter.step({
-  "name": "I receive all customers",
+  "name": "I open browser as \"admin\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:28)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:35)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I receive info about all payments",
+  "name": "I create new payment",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:33)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:51)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I receive customer name with sum \"800\"",
+  "name": "I click button last page",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:36)"
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:93)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I verify record",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:61)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I verify record with DB",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.qaconsultants.TestSteps.\u003cinit\u003e(TestSteps.java:64)"
 });
 formatter.result({
   "status": "passed"
